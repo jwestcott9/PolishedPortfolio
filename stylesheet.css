@@ -1,0 +1,115 @@
+/* Navbar container */
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  z-index: 10;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+body, html {
+  height: 100%;
+}
+
+
+#container1 {
+  background-image: url("assets/images/marco-bonomo-89638-unsplash.jpg");
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#firstSection{
+  height: 400px;
+  background: white;
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+/* .container-fluid{
+  width: 75%;
+  height: 200px;
+} */
+.space{
+  height: 150px;
+}
+.space1{
+  height: 30px;
+}
+
+#container2 {
+  background-image: url("assets/images/megan-hodges-96122-unsplash.jpg");
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-body{
+  opacity: 1;
+  border: #f9f9f9;
+  font-family: 'Raleway', sans-serif;
+  height: 300px;
+  text-align: center;
+}
+
+
+.card-horizontal{
+   width: 50%;
+   margin: 0 auto;
+}
+
+.vfImage{
+  border-radius: 25px;
+  height:300px;
+}
+
+.portfolio{
+  height: 200px;
+}
+.card-body{
+  background:#e0dede;
+  opacity: .9;
+  height: 400px;
+}
+.ViaFood {
+  padding-top: 70px;
+  height: 300px;
+}
+
+.portcard{
+  float: left;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+}
