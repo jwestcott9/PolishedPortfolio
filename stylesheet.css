@@ -108,12 +108,18 @@ body, html {
 }
 
 .portcard{
-  float: left;
   border-radius: 25px;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  border: 0px;
+
+  
 }
 
 .Non-profit {
   height: 350px;
+}
+
+.port-item{
+  height: 200px;
+  width: 200px;
 }
