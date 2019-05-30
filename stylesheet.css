@@ -75,13 +75,9 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.card-body{
-  opacity: 1;
-  border: #f9f9f9;
-  font-family: 'Raleway', sans-serif;
-  height: 300px;
-  text-align: center;
-}
+
+
+
 
 
 .card-horizontal{
@@ -111,6 +107,7 @@ body, html {
   border-radius: 25px;
   padding: 20px;
   border: 0px;
+  height: 500px;
 
   
 }
@@ -200,4 +197,77 @@ height: 100%;
 
 h5{
   margin-left: 30px;
+}
+
+.large-header {
+  position: relative;
+  width: 100%;
+  background: #111;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.demo .large-header {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
+}
+
+.main-title {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  color: #F9F1E9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.demo .main-title {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+}
+
+.main-title .thin {
+  font-weight: 200;
+}
+
+@media only screen and (max-width: 768px) {
+  .demo .main-title {
+     font-size: 3em;
+  }
+}
+a { 
+  color: black;
+  text-decoration: none;
+}
+
+a :hover{
+  color: black;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.portfolioSpace{
+  height: 250px;
+}
+
+.welcome {
+  opacity: 1;
+  border: #f9f9f9;
+  font-family: 'Raleway', sans-serif;
+  padding:  10px;
+  text-align: center;
+  margin: 0 auto;  
+}
+
+.span{
+  float: left;
+ 
+  width: 100%;
 }

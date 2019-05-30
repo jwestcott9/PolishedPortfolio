@@ -8,12 +8,14 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet">
+  <link href= "https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js">
+
 
 </head>
 <div id="navbar">
   <a href="#home">Home</a>
   <a href="#portfolio">Portfolio</a>
-  <a href= "#aboutMeTitle">About Me</a>
+  <a href= "#aboutMeDivider">About Me</a>
   <a href="#contact" data-toggle="modal" data-target="#exampleModal">Contact</a>
   
   
@@ -28,13 +30,41 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Contact!</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Send an Email</h5>
+        
+         
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">a contact page</span>
+           
           </button>
         </div>
         <div class="modal-body">
-          ...
+            <span aria-hidden="true" class="span">
+                <form id = "input_field">
+                  <div class="form-group">
+                    <label for="contact-name-input">Your Name</label>
+                    <input class="input form-control" id="name" placeholder="Your Name">
+                  </div>
+                </form>
+  
+              </span>
+              <span aria-hidden="true" class="span">
+                  <form id = "input_field">
+                    <div class="form-group">
+                      <label for="contact-name-input">Your Email Address</label>
+                      <input class="input form-control" id="name" placeholder="Your Email">
+                    </div>
+                  </form>
+    
+                </span>
+                <span aria-hidden="true" class="span">
+                    <form id = "input_field">
+                      <div class="form-group">
+                        <label for="contact-name-input">Your Message</label>
+                        <input class="input form-control" id="name" >
+                      </div>
+                    </form>
+      
+                  </span>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -44,24 +74,28 @@
       </div>
     </div>
   </div>
+
+  <!-- start of the webpage -->
   <div id="home"></div>
+
+ 
   <!-- The first section with the welcome and the photo of the mountains -->
   <div id="container1">
     <div class="row space"></div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 mt-3">
+        <div class="col-md-12 mt-3">
           <div>
             <div class="card-horizontal">
               <div class="img-square-wrapper">
                 <img class="" src="http://via.placeholder.com/300x180" alt="Card image cap">
               </div>
-              <div class="card-body">
+              <div class="card-body welcome">
                 <h4 class="card-title">Jeff Westcott</h4>
                 <h5>Full Stack Developer</h5>
-                <a href="#aboutMe">About Me</a>
+                <a href="#aboutMeDivider">About Me</a>
                 </br>
-                </br>
+                </br> 
                 <a href="#firstSection">Non-profit Startup</a>
                 </br>
                 </br>
@@ -81,7 +115,7 @@
       </div>
     </div>
   </div>
-  
+  <div id="aboutMeDivider"></div>
   <!-- about me  -->
   <div id="aboutMe">
       <h1 class= "typewriter " id="aboutMeTitle">Hello! I am jeff </h1>
@@ -142,8 +176,10 @@
           <div>
             <div class="card-horizontal">
               <div class="img-square-wrapper">
+                <a href="https://matthewshawn.github.io/AmandaKyleJeffMatt/">
                 <img class="vfImage" src="assets/images/twitter_profile_image.png" alt="Card image cap">
               </div>
+            </a>
               <div class="card-body ViaFood">
                 <h4 class="card-title">ViaFood</h4>
                 <p class="card-text">ViaFood is a quantity scalable food waste repurposing application
@@ -172,44 +208,83 @@
 </span>
   <div id="portfolio " class="row">
     <!-- Star wars RPG -->
-    <div class="col-md-3 align-middle"></div>
-    <div class="card portcard col-md-2 align-middle" id="rpg" style="width: 18rem;">
-      <img class="card-img-top align-middle" src="https://images.fatherly.com/wp-content/uploads/2019/01/review-starwars.jpg"
+    <div class="col-md-2 align-middle"></div>
+    <div class="card portcard col-md-3 align-middle" id="rpg" style="width: 18rem;">
+      <a href="https://jwestcott9.github.io/unit-4-game/">
+      <img  class="card-img-top align-middle" src="https://pbs.twimg.com/media/C9NO94jXsAEoOAJ.jpg"
         alt="Card image cap">
+    
+        <div class="card-body">
+            <h5 class="card-title">Star Wars RPG!</h5>
+            <p class="card-text"> Pick your character and go up against some formidable enemies</p>
+            
+          </div>
+        </a>
 
     </div>
     <!-- Rock Paper Scissors -->
-    <div class="card portcard col-md-2" id="rpsls" style="width: 18rem;">
+    <div class="card portcard col-md-3" id="rpsls" style="width: 18rem;">
+      <a href="">
       <img class="card-img-top"
         src="https://d3qdvvkm3r2z1i.cloudfront.net/media/catalog/product/cache/1/image/1800x/6b9ffbf72458f4fd2d3cb995d92e8889/r/o/rockpaperscissorslizardspock_newthumb.png"
         alt="Card image cap">
-
+        
+        <div class="card-body">
+            <h5 class="card-title">Multiplayer Rock Paper Scissors Lizard Spock</h5>
+            <p class="card-text"> Solve Disputes in the old fashion way from across the web</p>
+            
+          </div>
+        </a>
     </div>
     <!-- Hangman -->
-    <div class="card portcard col-md-2" id="hangman" style="width: 18rem;">
+    <div class="card portcard col-md-3" id="hangman" style="width: 18rem;">
+      <a href="">
       <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/I/81xt2%2BPD0IL.png"
         alt="Card image cap">
 
+        <div class="card-body">
+          <h5 class="card-title">Rockstar Hangman</h5>
+          <p class="card-text"> </p>
+
     </div>
+  </a>
    
+  </div>
   </div>
   <!-- Trivia -->
+  <div class="row portfolioSpace"></div>
     <div class="row">
-      <div class="col-md-3"></div>
-        <div class="card portcar col-md-2" id="trivia" style="width: 18rem;">
-            <img class="port-item align-middle"
+      <div class="col-md-2"></div>
+        <div class="card portcard col-md-3" id="trivia" style="width: 18rem;">
+          <a href="">
+            <img class="card-img-top"
               src="https://static.vecteezy.com/system/resources/previews/000/129/108/non_2x/trivia-papper-background-illustration-vector.jpg"
               alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Trivia Mania</h5>
+                <p class="card-text"> Pick a category and test your skills in easy medium and difficult trivia</p>
+              </div>
+
+            </a>
+
             </div>
   <!--Train Scheduler  -->
-      <div class="card portcard col-md-2" id="rpg" style="width: 18rem;">
+      <div class="card portcard col-md-3" id="rpg" style="width: 18rem;">
+        <a href="">
         <img class="card-img-top" src="https://designdroide.com/images/1859-steam-train.svg" alt="Card image cap">
+     
+      <div class="card-body">
+        <h5 class="card-title"> Train Scheduler</h5>
+        <p class="card-text"> Organize and plan your train route in an easy to use form</p>
       </div>
-   
+    </a>
   </div>
+   
+  
 
 
 
+</div>
 
 
 
