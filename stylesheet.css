@@ -14,8 +14,12 @@
   padding: 14px;
   text-decoration: none;
 }
-
+.spacer{
+  height: 50px;
+}
 /* Page content */
+
+
 .content {
   padding: 16px;
 }
@@ -98,7 +102,7 @@ body, html {
   opacity: .9;
   height: 400px;
 }
-.ViaFood {
+.foodSolutions {
   padding-top: 70px;
   height: 300px;
 }
@@ -270,4 +274,13 @@ html{
   float: left;
  
   width: 100%;
+}
+
+.itemTitle{
+  height: 20px;
+  overflow: hidden;
+}
+
+.homeSpacer{
+  height: 20px;
 }
