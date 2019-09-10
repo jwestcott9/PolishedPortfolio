@@ -284,3 +284,12 @@ html{
 .homeSpacer{
   height: 20px;
 }
+
+.linkedInLogo{
+  height: 64px;
+  width: 64px;
+}
+
+.logo{
+  padding: 20px;
+}
