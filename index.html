@@ -14,15 +14,15 @@
 </head>
 <div id="navbar">
   <div class="row "></div>
-  <a href="#home">Home</a>
+  <a href="#home"><h6>Home</h6></a>
   <a href="#portfolio">Portfolio</a>
-  <a href="#aboutMeDivider">About Me</a>
+  
   <a href="#contact" data-toggle="modal" data-target="#exampleModal">Contact</a>
   <a href="resume" data-toggle= "modal" data-target= "#resumeModal">Resume</a>
     <!-- Calendly link widget begin -->
 <a><link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-<a href="" onclick="Calendly.initPopupWidget({url: 'https:/calendly.com/jwestcott'});return false;">Scheduler</a></a>
+<a href="" onclick="Calendly.initPopupWidget({url: 'https:/calendly.com/jwestcott'});return false;">Scheduler</a>
 <!-- Calendly link widget end -->
 
 
@@ -38,7 +38,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Contact Info</h5>
 
 
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -46,14 +46,25 @@
           </button>
         </div>
         <div class="modal-body">
-          
+<div class="row">
+
+  <div class="col-md-5">
+    <span>
+      Jeffrey Westcott<br/>
+      (310) 938 6603<br/>
+      jwestcott9@gmail.com
+    </span>
+  </div>
+    <div class="col-md-5">
           <a href="https://github.com/jwestcott9" target = "_blank">
           <img class = "logo" src = "./assets/images/GitHub-Mark/PNG/GitHub-Mark-64px.png">
         </a>
         <a href="https://www.linkedin.com/in/jeffrey-westcott-01433b138/">
           <img class="linkedInLogo " src = "./assets/images/LinkedIn-Logos/LI-In-Bug.png">
         </a>
-        
+
+      </div>
+</div>
         <!-- <span aria-hidden="true" class="span">
             <form id="input_field">
               <div class="form-group">
@@ -84,8 +95,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Send
-          </button>
+        
         </div>
       </div>
     </div>
@@ -113,70 +123,43 @@
 
   <!-- The first section with the welcome and the photo of the mountains -->
   <div id="container1">
-    <div class="row space"></div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12 mt-3">
-          <div>
-            <div class="card-horizontal">
-              <div class="img-square-wrapper">
-                <img class="" src="http://via.placeholder.com/300x180" alt="Card image cap">
-              </div>
-              <div class="card-body welcome">
-                <h4 class="card-title">Jeff Westcott</h4>
-                <h5>Full Stack Developer</h5>
-                <div class="row homeSpacer"></div>
-                <a href="#aboutMeDivider">About Me</a>
-                </br>
-                </br>
-                <a href="#foodSolutions">Non-profit Startup</a>
-                </br>
-                </br>
-                <a href="#secondSection">Cycling 76 projects</a>
-                </br>
-                </br>
-                <a href="#games">Games</a>
-                </br>
-                </br>
-                <a href="#contact" data-toggle="modal" data-target="#exampleModal">Contact</a>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="aboutMeDivider"></div>
+    <div class="row "></div>
+    <div id="aboutMeDivider"></div>
   <!-- about me  -->
   <div id="aboutMe">
-    <h1 class="typewriter " id="aboutMeTitle">Hello! I am jeff </h1>
-    <div class="row space3">
-      
-      <p class="aboutMeParagraph">Welcome to my webpage! Throughout your experience here I hope to demponstrate my
-        skills in Web development, my diverse background and my ideas for the future. Currently I am working on a
-        certificate in Web Development from the University of Denver where I have
-        found emence enjoyment from building applications.
-        After i receive my certificate from DU I plan on working on my non-profit Idea called Food Solutions. I worked on a
-        team to develop a proof of concept and I hope to further the idea into a mobile and fully operational web
-        application. In addition I am working developing online instrument applications to allow for
-      </p>
-
-    </div>
+    <h1 class="typewriter " id="aboutMeTitle">Hello! I am Jeff </h1>
+    
     <div class="row">
-      <div class="col-md-1"></div>
+      <div class="col-md-2"></div>
 
       <div class="col-md-4">
         <div class="hexa">
           <div class="hex1">
             <div class="hex2">
-              <img src="https://fakeimg.pl/640x360" class="profileImage" alt="" width="400" height="313" />
+              <img src="./assets/images/possiblephoto.jpg" class="profileImage" alt="" width="400" height="313" />
             </div>
           </div>
         </div>
       </div>
-      <div class="progressBarParent col-md-5">
+      <div class="space3 col-md-5">
+      
+          <p class="card aboutMeParagraph">Hello! My name is Jeff Westcott. I am a recent graduate from the University of Denver Web Development 
+            coding Bootcamp. This site is dedicated to displaying my skills in Full Stack Web Developing.
+            In the navbar there are links to my resume, further contact information and a link to schedule meetings with me directly.
+            <span class="row">
+                <a href="#portfolio"><button  class="btn btn-primary initial-button">Portfolio</button> </a> 
+                <button  data-toggle="modal" data-target="#exampleModal" class="btn btn-primary initial-button">Contact</button>  
+                <button data-toggle= "modal" data-target= "#resumeModal" class="btn btn-primary initial-button">Resume</button>
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https:/calendly.com/jwestcott'});return false;"><button class="btn btn-primary initial-button">Schedule</button> </a>    
+            </span>
+            
+            
+          </p>
+          
+    
+        </div>
+      
+      <!-- <div class="progressBarParent col-md-5">
         <h5> HTML
         </h5>
         <div class="progress">
@@ -206,129 +189,353 @@
           <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
             aria-valuemax="100"></div>
         </div>
-      </div>
+      </div> -->
     </div>
+    
   </div>
-  <!-- Food Solutions  -->
-  <div id="foodSolutions">
-
-    <div class="spacer" ></div>
-
-    <div class="container-fluid">
-      <div class="row Non-profit">
-        <div class="col-12 mt-3">
+    <!-- <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 mt-3">
           <div>
             <div class="card-horizontal">
-              <div class="img-square-wrapper">
-                <a href="https://matthewshawn.github.io/AmandaKyleJeffMatt/">
-                  <img class="vfImage" src="assets/images/twitter_profile_image.png" alt="Card image cap">
-              </div>
-              </a>
-              <div class="card-body foodSolutions">
-                <h4 class="card-title">Food Solutions</h4>
-                <p class="card-text">Food Solutions is a quantity scalable food waste repurposing application
-                  - "we aim to provide the easiest possible way to donate and receive extra food"
-                  -
+              <div class="col-md-7 card-body welcome">
+                <h4 class="card-title">Jeff Westcott</h4>
+                <h5>Full Stack Developer</h5>
+                <div class="row homeSpacer"></div>
+                <a href="#aboutMeDivider">About Me</a>
+                </br>
+                </br>
+                <a href="#foodSolutions">Projects</a>
+                </br>
+                </br>
+              
 
-                </p>
+                <a href="#contact" data-toggle="modal" data-target="#exampleModal">Contact</a>
+
               </div>
             </div>
 
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
+  
+  <!-- Food Solutions  -->
+  
 
 
   <!-- photo in the parallex -->
-  <div id="container2"></div>
+  <div class="portfolioContainer">
 <div class="row spacer" id="portfolio" ></div>
+<h1 class="marginSpace">HTML/CSS/Javscript</h1>
+<div class="row" id="htmlAndCssandJavascript">
+    
+    <div class="card portfolio-card " style="width: 18rem;">
+        <img class="card-img-top portfolio-image" src="./assets/images/trainscaputre.PNG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Train Scheduler</h5>
+          <p class="card-text">Utilizing moment.js this simple application stores a schedule of upcoming trains based off of user input
+            demonstrating javascript's ability to dynamically populate html pages with styling.
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">HTML</li>
+          <li class="list-group-item">CSS</li>
+          <li class="list-group-item">Javascript</li>
+        </ul>
+        <div class="card-body">
+          <a href="https://jwestcott9.github.io/Trains/" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+          <a href="https://github.com/jwestcott9/Trains" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+        </div>
+      </div>
+
+      <div class="card portfolio-card " style="width: 18rem;">
+          <img class="card-img-top portfolio-image" src="./assets/images/gifsCapture.PNG" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Gif Getter</h5>
+            <p class="card-text">Using API calls to the GIPHY developer API this app creates buttons based off of user input then those buttons generate gifs 
+              based on the users click.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">Javascript</li>
+          </ul>
+          <div class="card-body">
+            <a href="https://jwestcott9.github.io/GifButtons/" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+            <a href=" https://github.com/jwestcott9/GifButtons" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+          </div>
+        </div>
+
+        <div class="card portfolio-card " style="width: 18rem;">
+            <img class="card-img-top portfolio-image" src="./assets/images/RockstarHangmna.PNG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Rockstart Hangman</h5>
+              <p class="card-text">This app uses pure javascript meaning there is no JQuery or any kind of library. The program references 
+                a hard coded answers array and creates a game based off of a random index.
+              
+              </p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">HTML</li>
+              <li class="list-group-item">CSS</li>
+              <li class="list-group-item">Javascript</li>
+            </ul>
+            <div class="card-body">
+              <a href="https://jwestcott9.github.io/Word-Guess-Game/" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+              <a href="https://github.com/jwestcott9/Word-Guess-Game" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+            </div>
+          </div>
+
+          <div class="card portfolio-card " style="width: 18rem;">
+              <img class="card-img-top portfolio-image" src="./assets/images/startwars.PNG" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">StarWars RPG</h5>
+                <p class="card-text">You must pick your jedi to guide you through the challenge of defeating the powers of the DarkSide. This App leverages Jquery and Object oriented programming to accomplish battle simulation.
+                
+                </p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">HTML</li>
+                <li class="list-group-item">CSS</li>
+                <li class="list-group-item">JQuery</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://jwestcott9.github.io/unit-4-game/" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+                <a href="https://github.com/jwestcott9/unit-4-game" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+              </div>
+            </div>
+
+            <div class="card portfolio-card " style="width: 18rem;">
+                <img class="card-img-top portfolio-image" src="./assets/images/trivia.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Trivia Game</h5>
+                  <p class="card-text">This app utilizes Javascripts Timing methods and calls to the open Trivia API to create a truly random and very difficult trivia game.
+                  
+                  </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">HTML</li>
+                  <li class="list-group-item">CSS</li>
+                  <li class="list-group-item">JQuery</li>
+                </ul>
+                <div class="card-body">
+                  <a href="https://jwestcott9.github.io/TriviaGame/" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+                  <a href="https://github.com/jwestcott9/TriviaGame" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+                </div>
+              </div>
+
+              <div class="card portfolio-card " style="width: 18rem;">
+                  <img class="card-img-top portfolio-image" src="./assets/images/foodSolutions.PNG" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Food Finders</h5>
+                    <p class="card-text">The aim of this application is to make it way easier for 
+                      individuals and organizations to donate food to food banks. This app uses firebase to store data about users and potential 
+                      jobs for volunteers to accomplish.
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">HTML/CSS/Javascript</li>
+                    <li class="list-group-item">Firebase Database</li>
+                    <li class="list-group-item">Goggle Api's</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="https://matthewshawn.github.io/AmandaKyleJeffMatt/" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+                    <a href="https://github.com/MatthewShawn/AmandaKyleJeffMatt" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+                  </div>
+                </div>
+
+
+    
+</div>
+<h1 class="marginSpace">Node.js - Command Line Apps</h1>
+<div class="row marginSpace" id= "node">
+
+    <div class="card portfolio-card " style="width: 18rem;">
+        <img class="card-img-top portfolio-image" src="./assets/images/NodeAmazon.PNG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">AmazonCli</h5>
+          <p class="card-text">This app is meant to demonstrate some of the power of accessing data in a mySQL database and then manipulating it using a node.js application.
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Node.js</li>
+          <li class="list-group-item">SQL Database</li>
+        </ul>
+        <div class="card-body">
+          <a href="https://www.youtube.com/watch?v=RsFySuCd6Sc" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+          <a href="https://github.com/jwestcott9/Amazoncli" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+        </div>
+      </div>
+
+      <div class="card portfolio-card " style="width: 18rem;">
+          <img class="card-img-top portfolio-image" src="./assets/images/LiriBot.PNG" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">LiriBot</h5>
+            <p class="card-text">
+                This Liribot is a simplified siri type command line application. It utilizes API calls in the command line to grab data from IMDB, Spotify, and 
+                BandsInTown. It is also able to grab data from an external txt file.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Node.js</li>
+            <li class="list-group-item">API calls</li>
+            <li class="list-group-item">File System reader</li>
+
+          </ul>
+          <div class="card-body">
+            <a href="https://www.youtube.com/watch?v=PHn6hERkpl8&feature=youtu.be" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+            <a href="https://github.com/jwestcott9/LIRIbot/blob/master/README.md" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+          </div>
+        </div>
+
+</div>
+<h1 class="marginSpace"> Express/Mongo/SQL</h1>
+<div class="row marginSpace" id="MongoexpressSql">
+    <div class="card portfolio-card " style="width: 18rem;">
+        <img class="card-img-top portfolio-image" src="./assets/images/friendfinder.PNG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Friend Finder</h5>
+          <p class="card-text">
+             This App aims to be able to match up users with other users based off of answers to simple questions. 
+             This app runs on an express server.
+
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">HTML/CSS/Javascript</li>
+          <li class="list-group-item">Node.js</li>
+          <li class="list-group-item">Express</li>
+
+        </ul>
+        <div class="card-body">
+          <a href="https://safe-tor-24544.herokuapp.com/" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+          <a href="https://github.com/jwestcott9/friendFinder" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+        </div>
+      </div>
+
+      <div class="card portfolio-card " style="width: 18rem;">
+          <img class="card-img-top portfolio-image" src="./assets/images/foodsolutions2.PNG" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Food Solutions</h5>
+            <p class="card-text">
+               This App is a continuation of the Food Finders App, with the addition of an Node/Express backend in communication with a SQL databse.
+  
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">HTML/CSS/Javascript</li>
+            <li class="list-group-item">Express/Node</li>
+            <li class="list-group-item">MySQL</li>
+  
+          </ul>
+          <div class="card-body">
+            <a href="https://foodsolutions.herokuapp.com/" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+            <a href="https://github.com/trevorsmay/wastenot" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+          </div>
+        </div>
+
+        
+      <div class="card portfolio-card " style="width: 18rem;">
+          <img class="card-img-top portfolio-image" src="./assets/images/MongonewsScraper.PNG" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Mongo News Scraper</h5>
+            <p class="card-text">
+               The Mongo News Scraper takes the most recent articles published by propublica and allows a user to save the 
+               articles and save comments on the articles.
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">HTML/CSS/Javascript</li>
+            <li class="list-group-item">Express/Node</li>
+            <li class="list-group-item">Mongo Database</li>
+  
+          </ul>
+          <div class="card-body">
+            <a href="https://polar-journey-88447.herokuapp.com/" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+            <a href="https://github.com/jwestcott9/mongoNewsScraper" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+          </div>
+        </div>
+
+</div>
+
+<h1 class="marginSpace">Mongo/Express/React/Node</h1>
+<div class="row marginSpace" id="Mongo/Express/React/Node">
+  <div class="card portfolio-card " style="width: 18rem;">
+      <img class="card-img-top portfolio-image" src="./assets/images/Clicky.PNG" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Click Memory game</h5>
+        <p class="card-text">
+         This is a simple Memory game using react!
+        </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">React.js</li> 
+
+      </ul>
+      <div class="card-body">
+        <a href="https://jwestcott9.github.io/clicky-game/" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+        <a href="https://github.com/jwestcott9/clicky-game" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+      </div>
+    </div>
+
+    <div class="card portfolio-card " style="width: 18rem;">
+        <img class="card-img-top portfolio-image" src="./assets/images/reACTbOOKS.PNG" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Google Books</h5>
+          <p class="card-text">
+          This is a fullstack MERN app with a React frontend that uses node and express to communicate with a Mongo DB backend.
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">React.js</li>
+          <li class="list-group-item">Express.js/Node</li>
+              <li class="list-group-item">MongoDB</li>
+  
+        </ul>
+        <div class="card-body">
+          <a href="https://jsw-googlebooks.herokuapp.com/" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+          <a href="https://github.com/jwestcott9/googlebooks" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+        </div>
+      </div>
+
+
+      <div class="card portfolio-card " style="width: 18rem;">
+          <img class="card-img-top portfolio-image" src="./assets/images/gitpumped.PNG" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">GitPumped</h5>
+            <p class="card-text">
+            This App aims to create and optimize a workout and a meal plan for them. This information is then displayed on a calendar. In 
+            future development this information will be able to be sent to a user as a calendar invite. 
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">React.js</li>
+            <li class="list-group-item">Express.js/Node</li>
+                <li class="list-group-item">MongoDB</li>
+                <li class="list-group-item">Passport Authentication</li>
+
+    
+          </ul>
+          <div class="card-body">
+            <a href="http://localhost:3000/" target="_blank" class="card-link"><button class="btn btn-primary">Demo</button></a>
+            <a href="https://github.com/jwestcott9/gitpumped" class="card-link" target="_blank" > <button class="btn btn-primary">Github</button></a>
+          </div>
+        </div>
+
+
+</div>
+
+</div>
+
+<div class="row back-to-top">
+  <div class="col-md-5"></div>
+  <a href="#home"><button class="btn btn-danger">Back To Top</button></a>
+</div>
   <!-- portfolio section -->
-  <span class="row">
-    <div class="col-md-4"></div>
-    <h1 class="col-md-4 portfolioHeading">Portfolio</h1>
-    <div class="col-md-4"></div>
-  </span>
-  <div id="portfolio " class="row">
-    <!-- Star wars RPG -->
-    <div class="col-md-2 align-middle"></div>
-    <div class="card portcard col-md-3 align-middle" id="rpg" style="width: 18rem;">
-      <a href="https://jwestcott9.github.io/unit-4-game/">
-        <img class="card-img-top align-middle" src="https://pbs.twimg.com/media/C9NO94jXsAEoOAJ.jpg"
-          alt="Card image cap">
 
-        <div class="card-body">
-          <h5 class="card-title">Star Wars RPG!</h5>
-          <p class="card-text"> Pick your character and go up against some formidable enemies</p>
-
-        </div>
-      </a>
-
-    </div>
-    <!-- Rock Paper Scissors -->
-    <div class="card portcard col-md-3" id="rpsls" style="width: 18rem;">
-      <a href="">
-        <img class="card-img-top"
-          src="https://d3qdvvkm3r2z1i.cloudfront.net/media/catalog/product/cache/1/image/1800x/6b9ffbf72458f4fd2d3cb995d92e8889/r/o/rockpaperscissorslizardspock_newthumb.png"
-          alt="Card image cap">
-
-        <div class="card-body">
-          <h5 class="card-title">Multiplayer Rock Paper Scissors Lizard Spock</h5>
-          <p class="card-text"> Solve Disputes in the old fashion way from across the web</p>
-
-        </div>
-      </a>
-    </div>
-    <!-- Hangman -->
-    <div class="card portcard col-md-3" id="hangman" style="width: 18rem;">
-      <a href="">
-        <img class="card-img-top" src="https://images-eu.ssl-images-amazon.com/images/I/81xt2%2BPD0IL.png"
-          alt="Card image cap">
-
-        <div class="card-body itemTitle">
-          <h5 class="card-title">Rockstar Hangman</h5>
-          <p class="card-text"> </p>
-
-        </div>
-      </a>
-
-    </div>
-  </div>
-  <!-- Trivia -->
-  <div class="row portfolioSpace"></div>
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="card portcard col-md-3" id="trivia" style="width: 18rem;">
-      <a href="">
-        <img class="card-img-top"
-          src="https://static.vecteezy.com/system/resources/previews/000/129/108/non_2x/trivia-papper-background-illustration-vector.jpg"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Trivia Mania</h5>
-          <p class="card-text"> Pick a category and test your skills in easy medium and difficult trivia</p>
-        </div>
-
-      </a>
-
-    </div>
-    <!--Train Scheduler  -->
-    <div class="card portcard col-md-3" id="rpg" style="width: 18rem;">
-      <a href="">
-        <img class="card-img-top" src="https://designdroide.com/images/1859-steam-train.svg" alt="Card image cap">
-
-        <div class="card-body">
-          <h5 class="card-title"> Train Scheduler</h5>
-          <p class="card-text"> Organize and plan your train route in an easy to use form</p>
-        </div>
-      </a>
-    </div>
-
-
-
-
-
-  </div>
 
 
 
@@ -344,6 +551,7 @@
   </script>
 
   <script src="index.js"></script>
+
 
 
 </body>
