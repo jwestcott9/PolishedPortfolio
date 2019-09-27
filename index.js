@@ -27,3 +27,9 @@ function myFunction() {
   }
 }
 
+
+$(window).resize(function(){
+  If($(window).width()<500){
+    $('').removeClass('fade');
+   }
+})
